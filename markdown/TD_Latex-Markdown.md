@@ -1,18 +1,17 @@
 <!-- $theme: default -->
+<!-- $size: 16:9 -->
 <!-- page_number: true -->
+<!-- footer: TD LaTeX @ UVSQ | ©️ Alix Chagué | 2020 -->
 
-Initiation à Markdown et LaTeX
-====
+# Initiation à Markdown et LaTeX
 
-**MIEC211 - Module 2**
+### Université Versailles Saint-Quentin-en-Yvelines
 
+$$ $$
 
--- 
 Alix Chagué
-
-
-*alix.chague@uvsq.fr*
-*IECI - Université Versailles Saint-Quentin*
+*Ingénieure de Recherche pour ALMAnaCH (Inria)*
+:e-mail: [alix.chague@inria.fr](mailto:alix.chague@inria.fr)
 
 ---
 
@@ -24,16 +23,16 @@ Alix Chagué
 
 ---
 # Plan des séances
-### 1er mars :
+### séance 1 :
 texte numérique, Markdown et introduction de LaTeX
 
-### 15 mars : 
+### séance 2 : 
 approfondissement de LaTeX
 
 ---
 # Evaluation
-- une évaluation sur table le 15 mars (notée du 6)
-- un rendu en fin de chaque séance, soit 2 au total (noté chacun sur 7)
+- un quiz sur les notions vu pendant la première séance
+- TP d'encodage réalisé pendant la deuxième séance
 
 ---
 
@@ -58,15 +57,11 @@ UVSQ
 ---
 # Du binaire au texte numérique (2)
 
-On appelle **`texte brut`** un texte lisible par l'humain résultant d'un encodage très simple permettant de traduire des trains binaires (suites de 0 et de 1) en quelque chose de facilement lisible par l'humain, mais sans aucune mise en forme.
-
-Un fichier **`.txt`** ou **`.md`** est un fichier de texte brut.
-
----
-# brut vs. binaire 
-![texte brut](./images/brut.png)
-
-![texte binaire](./images/binaire2.PNG)
+| | |
+|:-- | :-- |
+| Information binaire | des suites de 0 et de 1 (aussi appelé **`train binaire`**) |
+|**`Texte brut`** | un texte lisible par l'humain sans aucune mise en forme du texte (pas de couleur, de taille, de police, de style, etc) |
+| Extensions possibles | **`.txt`** ou **`.md`** |
 
 ---
 # Encodage/décodage du binaire (1)
@@ -78,7 +73,7 @@ Le **`character set`** (jeu de caractères) détermine la manière dont les trai
 
 Quelques exemples :
 - **`ASCII`** (*American Standard Code for Information Interchange*) : très répandu parce qu'ancien (1963) : 128 codes en 7 bits pour l'anglais.
-- **`UTF-8`** (*Universal character set Transformation Format - 8 bits*) : sauveur des informaticien·nes francophones (1996) : plusieurs milliers de caractères. 
+- **`UTF-8`** (*Universal character set Transformation Format - 8 bits*) : plus récent (1996) : plusieurs milliers de caractères. 
 
 
 > *Un `bit` est une instance de 0 ou de 1*
@@ -89,11 +84,16 @@ Quelques exemples :
 
 ![exemple_mauvaise_décodage](./images/ex_characterset_error.PNG)
 
+> exemple de mauvais décodage
+
 ---
 # Texte enrichi
-Un **`texte enrichi`** est un texte encodé (comme le texte brut) mais qui contient en plus des informations de mise en forme, généralement sous la forme de balises. 
 
-Un fichier **`.rtf`** ou **`.doc`** est un fichier de texte enrichi.
+| | |
+|:-- | :-- |
+| **`Texte enrichi`** | un texte contenant des informations de mise en forme qui peuvent être ou non **`interprêtées`** |
+| **`Balises`** | marqueurs contenus dans le texte contenant les informations de mise en forme |
+| Extensions possibles | **`.rtf`** ou **`.doc`**  |
 
 ---
 
@@ -116,11 +116,11 @@ Markdown
 
 ---
 # Markdown
-**`Markdown`** est un langage de balisage léger qui permet d'encoder facilement la mise en page d'un texte sans gêner sa lecture. Il a été créé en 2004 par John Gruber et Aaron Swartz, deux informaticiens américains.
+**`Markdown`** est un **langage de balisage léger** qui permet d'encoder facilement la mise en page d'un texte sans gêner sa lecture. Il a été créé en 2004 par John Gruber et Aaron Swartz, deux informaticiens américains.
 
 Après compilation, il est facilement converti en **`PDF`** ou en **`HTML`**. Markdown permet donc de créer rapidement des contenus web ou des documents... comme cette présentation ! 
 
-Un fichier **`.md`** est encodé en Markdown.
+Un fichier d'extension **`.md`** est encodé en Markdown.
 
 ---
 # Mettre en forme avec Markdown (1)
@@ -239,9 +239,9 @@ Reproduisez le plus fidèlement possible la mise en forme suivante :
 ---
 
 # LaTeX : définition
-**`LaTeX`** est un langage et un système de composition de documents. Contrairement à Markdown, LaTeX est très complet, mais aussi beaucoup plus difficile à lire sans compilation. Comme Markdown, il est libre et gratuit.
+**`LaTeX`** est **un langage et un système de composition de documents**. Contrairement à Markdown, LaTeX est très complet, mais aussi beaucoup plus difficile à lire sans compilation. Comme Markdown, il est libre et gratuit.
 
-Un fichier **`.tex`** est écrit en LaTeX.
+Un fichier d'extension **`.tex`** est écrit en LaTeX.
 
 Compilé, un fichier LaTeX produit un document au format **`PDF`** de plusieurs types possibles : articles, cv, livre, présentation, ...
 
@@ -361,7 +361,7 @@ Entre `{}`, on indique le type de document comme :
 | :--------------: | :-------: | :------: | :----------: |
 | livre ou mémoire | article   | rapport  | présentation |
 
-> chaque document class a ses spécificités
+> chaque *document class* a ses spécificités
 
 ---
 # Import de `package` (paquet)
